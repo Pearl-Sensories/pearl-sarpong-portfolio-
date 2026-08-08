@@ -25,6 +25,19 @@
   --color-blush-100: #35101f;
 
   --shadow-glow: 0 0 50px -10px rgba(255, 60, 150, 0.4);
+
+  /* Every text-* utility shaved down by 1px from Tailwind's defaults. */
+  --text-xs: calc(0.75rem - 1px);
+  --text-sm: calc(0.875rem - 1px);
+  --text-base: calc(1rem - 1px);
+  --text-lg: calc(1.125rem - 1px);
+  --text-xl: calc(1.25rem - 1px);
+  --text-2xl: calc(1.5rem - 1px);
+  --text-3xl: calc(1.875rem - 1px);
+  --text-4xl: calc(2.25rem - 1px);
+  --text-5xl: calc(3rem - 1px);
+  --text-6xl: calc(3.75rem - 1px);
+  --text-7xl: calc(4.5rem - 1px);
 }
 
 * {
