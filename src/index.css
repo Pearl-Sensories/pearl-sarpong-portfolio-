@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  /* Light pink & white theme. Token names kept from the original dark
+     palette so component classNames didn't need touching — only the
+     values changed. --color-blush-100 now holds the dark text color
+     (was the light text color on the old dark theme). */
+  --color-ink: #fff8fb;
+  --color-burgundy-950: #ffe6f0;
+  --color-burgundy-900: #ffd3e6;
+  --color-burgundy-800: #ff9dc7;
+  --color-burgundy-700: #ff6fae;
+  --color-wine-600: #f5387f;
+  --color-crimson-700: #a30e63;
+  --color-crimson-600: #d6127a;
+  --color-crimson-500: #ec1f8c;
+  --color-rose-500: #ff4fa3;
+  --color-pink-500: #ff4fa0;
+  --color-pink-400: #ff7cb8;
+  --color-pink-300: #ffa8d0;
+  --color-blush-200: #ffd9e8;
+  --color-blush-100: #35101f;
+
+  --shadow-glow: 0 0 50px -10px rgba(255, 60, 150, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-ink);
+  color: var(--color-blush-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-crimson-500);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-pink-500), var(--color-crimson-600));
+  border-radius: 999px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ffb0d9 0%, #ff4fa0 45%, #c2126b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-noise {
+  background-image: radial-gradient(rgba(214, 18, 122, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+@keyframes flower-sway {
+  0%, 100% {
+    transform: translateY(0) rotate(var(--flower-rotate, 0deg));
+  }
+  50% {
+    transform: translateY(-8px) rotate(calc(var(--flower-rotate, 0deg) + 6deg));
+  }
+}
+
+.flower-sway {
+  animation: flower-sway 7s ease-in-out infinite;
+}
