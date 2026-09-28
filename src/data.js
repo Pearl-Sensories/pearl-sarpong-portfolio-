@@ -139,6 +139,17 @@ export const projects = [
     tags: ["HTML5", "CSS3", "Clone Practice"],
     links: [{ label: "Live Demo", url: "https://glosslab-nails.vercel.app/html/index.html" }],
   },
+  {
+    title: "Mac n Cheese — Online Ordering",
+    subtitle: "Solo Full-Stack Developer",
+    points: [
+      "Built a complete food-ordering experience end-to-end, from menu browsing to checkout.",
+      "Designed a flexible order builder supporting portion sizes, packaging options, and optional add-on proteins and drinks.",
+      "Integrated MTN MoMo and Paystack for secure online payment, with a 4-digit delivery verification code for order handoff.",
+    ],
+    tags: ["React", "Payments", "E-Commerce"],
+    links: [{ label: "Live Site", url: "https://peppy-travesseiro-98e804.netlify.app/" }],
+  },
 ];
 
 export const education = [
