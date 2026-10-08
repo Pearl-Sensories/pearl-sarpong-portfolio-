@@ -150,6 +150,17 @@ export const projects = [
     tags: ["React", "Payments", "E-Commerce"],
     links: [{ label: "Live Site", url: "https://peppy-travesseiro-98e804.netlify.app/" }],
   },
+  {
+    title: "GO ESG Platform",
+    subtitle: "Solo Full-Stack Developer",
+    points: [
+      "Built GO ESG, an Environmental, Social & Governance (ESG) platform with company-based accounts, as a solo full-stack developer.",
+      "Implemented secure account flows: company-email sign-up and login with password recovery.",
+      "Added a dark mode toggle for a more comfortable viewing experience.",
+    ],
+    tags: ["Full-Stack", "Authentication", "ESG"],
+    links: [{ label: "Live Site", url: "https://esg-project-bice.vercel.app/" }],
+  },
 ];
 
 export const education = [
